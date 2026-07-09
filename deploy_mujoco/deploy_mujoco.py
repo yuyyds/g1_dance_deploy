@@ -202,6 +202,10 @@ if __name__ == "__main__":
                 #     state_cmd.skill_cmd = FSMCommand.SKILL_19    # jiangnanstyle
                 # if joystick.is_button_released(JoystickButton.B) and joystick.is_button_pressed(JoystickButton.R1):
                 #     state_cmd.skill_cmd = FSMCommand.SKILL_20   # gaigeshunfeng
+                if joystick.is_button_released(JoystickButton.B) and joystick.is_button_pressed(JoystickButton.R1):
+                    state_cmd.skill_cmd = FSMCommand.SKILL_14   # chuxue
+                
+                
                 if joystick.is_button_released(JoystickButton.Y) and joystick.is_button_pressed(JoystickButton.R1):
                     state_cmd.skill_cmd = FSMCommand.SKILL_2    # Kongfan
                 

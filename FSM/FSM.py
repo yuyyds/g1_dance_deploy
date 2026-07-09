@@ -16,7 +16,7 @@ from policy.guofucheng_dance.guofucheng_dance import guofucheng_dance
 from policy.dahuajiao.dahuajiao import dahuajiao
 from policy.Roundhouse_kick.Roundhouse_kick import Roundhouse_kick
 from policy.guma_45s_dance.guma_45s_dance import guma_45s_dance
-# from policy.guma_dance2.guma_dance2 import guma_dance2
+from policy.guma_dance2.guma_dance2 import guma_dance2
 from policy.guma_taiji.guma_taiji import guma_taiji
 from policy.zoo_dance.zoo_dance import zoo_dance
 from policy.xinglian_dance1.xinglian_dance1 import xinglian_dance1
@@ -61,7 +61,7 @@ class FSM:
         self.Roundhouse_kick_policy = Roundhouse_kick(state_cmd, policy_output)
         self.guma_45s_dance_policy = guma_45s_dance(state_cmd, policy_output)
         self.guofucheng_dance_policy = guofucheng_dance(state_cmd, policy_output)
-        # self.guma_dance2_policy = guma_dance2(state_cmd, policy_output)
+        self.guma_dance2_policy = guma_dance2(state_cmd, policy_output)
         self.zoo_dance_policy = zoo_dance(state_cmd, policy_output)
         self.dahuajiao_policy = dahuajiao(state_cmd, policy_output)
         self.xinglian_dance1_policy = xinglian_dance1(state_cmd, policy_output)
@@ -154,8 +154,8 @@ class FSM:
             self.cur_policy = self.guma_taiji_policy
         elif((policy_name == FSMStateName.SKILL_Roundhouse_kick)): 
             self.cur_policy = self.Roundhouse_kick_policy
-        # elif((policy_name == FSMStateName.SKILL_dance2)): 
-        #     self.cur_policy = self.guma_dance2_policy
+        elif((policy_name == FSMStateName.SKILL_dance2)): 
+            self.cur_policy = self.guma_dance2_policy
         elif((policy_name == FSMStateName.SKILL_zoo_dance)): 
             self.cur_policy = self.zoo_dance_policy
         elif((policy_name == FSMStateName.SKILL_xinglian_dance1)): 
