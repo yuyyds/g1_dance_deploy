@@ -1,0 +1,3 @@
+xml_path: "g1_description/scene.xml"
+simulation_dt: 0.003    # 仿真时间步长(3毫秒)
+control_decimation: 7    # 控制降频因子(控制更新频率是仿真的1/7)
