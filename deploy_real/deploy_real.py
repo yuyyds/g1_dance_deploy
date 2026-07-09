@@ -109,6 +109,8 @@ class Controller:
                 #     self.state_cmd.skill_cmd = FSMCommand.SKILL_20  # gaigeshunfeng
                 # if self.remote_controller.is_button_pressed(KeyMap.X) and self.remote_controller.is_button_pressed(KeyMap.R1):
                 #     self.state_cmd.skill_cmd = FSMCommand.SKILL_15  # zoo dance
+                # if self.remote_controller.is_button_pressed(KeyMap.X) and self.remote_controller.is_button_pressed(KeyMap.R1):
+                #     self.state_cmd.skill_cmd = FSMCommand.SKILL_14  # chuxue dance
 
                 # ================== 剧烈动作 ==================
                 # if self.remote_controller.is_button_pressed(KeyMap.X) and self.remote_controller.is_button_pressed(KeyMap.R1):
